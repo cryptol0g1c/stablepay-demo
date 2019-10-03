@@ -35,3 +35,13 @@ To query directly the DAI balance of the address:
       TokenInfo: {}
     }
 ```
+
+
+## Docker
+
+To build and run the app as Docker image simply run:
+
+```
+docker build -t <app_name> .
+docker run -p 8080:8080 <app_name>
+```
