@@ -1,0 +1,56 @@
+{
+  "name": "stablepay-dev",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "dev:client": "webpack-dev-server --open --host 0.0.0.0",
+    "dev:server": "node ./server/index.js",
+    "start": "rm -rf ./dist && npm-run-all --parallel dev:client dev:server",
+    "test": "jest --config=jest.json",
+    "test:watch": "npm run test -- --watch",
+    "test:coverage": "npm run test -- --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/cryptologicdev/stablepay-dev.git"
+  },
+  "keywords": [],
+  "author": "Cryptologic",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/cryptologicdev/stablepay-dev#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "from-exponential": "^1.0.0",
+    "lodash": "^4.17.15",
+    "morgan": "~1.9.1",
+    "npm-run-all": "^4.1.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "web3": "^1.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^3.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "jest-express": "^1.10.1",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  }
+}
